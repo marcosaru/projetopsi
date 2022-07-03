@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    box-sizing: border-box; }
+body{
+    display: grid;
+    grid-template-rows: 150px 1fr 100px;
+    margin: 0;
+    font: 30px;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(53, 38, 7, 0.651),rgba(248, 226, 164, 0.644));
+}
+header{
+    display: grid;
+    min-height: 150px;
+    grid-template-columns: 150px 3fr;
+    width: calc(100%-5px);
+    font-family: 'Pacifico', cursive;
+    font-style: italic;
+    font-size: 28px;
+    color: rgb(251, 255, 1);
+}
+
+h1{
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 150px;
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+.d3{
+    box-sizing: border-box;
+    width: fit-content;
+    display:none;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    justify-content: flex-end;
+}
+.d1{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    margin: 1%;
+    image-rendering: initial;
+    z-index: 1;
+}
+#logo{
+    height: 100%;
+    margin-left: 60px;
+    border-radius: 30px;
+}
+#img1{
+    max-width: 150px;
+    max-height: max-content;
+    object-fit: contain;
+}
+section{display: grid; margin: 0;
+    width: 100%;
+    grid-template-columns: 70px 1fr minmax(280px,750px) 1fr;
+     ;
+}
+a{
+    height: 150px;
+    text-decoration: none ;
+    overflow: hidden;
+}
+#caixa{
+    display: grid;
+    grid-column-start: 2;
+    margin: 10px;
+}
+.redes{
+    grid-column-start: 1;
+    display: flexbox;
+}
+.redes a{
+    display: flex;
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+}
+.redes a:hover{
+    border-right: solid 5px red;
+}
+.redes a img{
+    width: 100%;
+    height: 100%;
+}
+#caixa{
+    grid-column-start: 3;
+    width: 96%;
+}
+.box{
+    grid-column-start: 3;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    min-width: max-content;
+    min-height: max-content;
+    background-color: rgba(123, 124, 167,.2);
+    margin-left: center;
+    margin-top: 30px;
+    border-radius: 30px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    font-family: 'Indie Flower', cursive ;
+
+}
+.menu2{
+    position: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.menu2:hover{
+    border-bottom: solid 2px red;
+}
+
+#idMenu{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    grid-column-start: 3;
+}
+.btn{
+    display: none; 
+    margin-left: 4px;
+    margin-bottom: 2px;
+}
+#idMenu2{
+    margin-left: 4px ;
+    background-color: rgb(114, 143, 206);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 3px;
+    grid-column-start: 1;
+}
+
+.menu{ 
+    display: inline-flex;
+    grid-column-start: 3;
+    background-color: rgb(114, 143, 206);
+    margin: 10px;
+    box-sizing: max-content;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 90px;
+    height: 50px;
+    border: solid 2px ;
+    border-radius: 8px;
+    box-shadow: 1px 5px 5px 1px rgb(10, 10, 10);
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.menu:hover{
+    /* background-color: rgb(84, 81, 105); */
+    background: linear-gradient(to right,rgb(43, 40, 65),rgb(114, 143, 206));
+}
+.menu:active{
+    box-shadow: none;
+}
+
+#img2{
+    display: flex;
+    width: 200px;
+    height: 100%;
+}
+footer{display: flex;
+    color: rgb(251, 255, 1);}
+footer span{
+    display: flex;
+    width: calc(100% + 200px);
+    justify-content: center;
+    justify-items: center;
+    align-items: flex-end;
+    bottom: 0;
+}
+@media(max-width:670px){
+    #idMenu  {display: none;}
+    .btn    {display: flex;
+        padding: 0;
+        justify-content: center;
+    max-width: 65px;
+    max-height: 21px;
+    }
+    .box{grid-row-start:1;
+        grid-row-end: 4;
+        min-height: max-content;
+        }
+}
+@media(min-width:670px){
+    #idMenu2{display: none;}
+    .menu2{display: none;}
+}
+
+@media(max-width:600px){
+    .d2  {display: none;}
+    .d3 {display: grid}
+}
+@media(max-width:630px){
+    
+   
+    #menu2 {grid-column-start: 1};
+    #caixa {grid-row-start: 1;
+        background-color: aqua;
+    grid-column-start: 3;
+    margin: 30px;}
+}
