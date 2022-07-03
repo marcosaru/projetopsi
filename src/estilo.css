@@ -152,7 +152,9 @@ a{
 .menu{ 
     display: inline-flex;
     grid-column-start: 3;
-    background-color: rgb(114, 143, 206);
+    background-color: rgb(51,76,140);
+    color: white;
+    font-weight: bold;
     margin: 10px;
     box-sizing: max-content;
     justify-content: center;
